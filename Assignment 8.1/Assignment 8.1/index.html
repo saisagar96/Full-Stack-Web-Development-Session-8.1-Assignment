@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<script>
+				function isPrime(number)
+				{
+					var i,flag=true;// Initially assuming the number as prime by setting the flag to true
+					// Iterating from 2 to number - 1 to check if the number is divisible
+					// If divisible set the flag as false else true
+					for(i=2; i <= number-1; i++)
+					{
+						if(number % i == 0)
+						{
+							flag = false;
+							break;
+						}
+					}
+					return flag;
+				}
+				console.log(isPrime(98)); //Print false
+				console.log(isPrime(97)); //Print true
+		</script>
+	</body>
+</html>
